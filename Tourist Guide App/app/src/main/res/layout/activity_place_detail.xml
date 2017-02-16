@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tourist.android.com.newproject.PlaceDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details of The Place"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="Name"
+                android:textSize="17sp"
+                android:id="@+id/txtName"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type: "
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="Type"
+                android:textSize="17sp"
+                android:id="@+id/txtType"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: "
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textSize="17sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="Provide a Short Description"
+                android:textSize="17sp"
+                android:id="@+id/txtDescription"/>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:orientation="horizontal"
+                android:id="@+id/panelImage">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="FIND MY LOCATION"
+            android:id="@+id/btnLocation"
+            android:gravity="center"/>
+    </LinearLayout>
+</ScrollView>

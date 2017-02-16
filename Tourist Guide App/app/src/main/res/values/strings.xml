@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TOURIST GUIDE</string>
+    <string name="google_app_id">AIzaSyBbD4JFHEwZHd-ORqoDsmerwIEBlBfTXF0</string>
+    <string name="icon_signin">&#xf090;</string>
+    <string name="icon_register">&#xf25d;</string>
+    <string name="icon_edit">&#xf040;</string>
+    <string name="icon_save">&#xf0c7;</string>
+    <string name="icon_search">&#xf002;</string>
+    <string name="icon_new">&#xf055;</string>
+    <string name="icon_location">&#xf124;</string>
+</resources>
